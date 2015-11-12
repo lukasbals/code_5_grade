@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<people>
+	<person id="1">
+		<firstname>Hans</firstname>
+		<lastname>Maier</lastname>
+	</person>
+	<person id="2">
+		<firstname>Wolfgang</firstname>
+		<lastname>Niersbach</lastname>
+	</person>
+</people>

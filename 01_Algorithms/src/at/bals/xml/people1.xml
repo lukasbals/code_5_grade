@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE person SYSTEM "people.dtd" >
+<person id="1">
+	<firstname>Lukas</firstname>
+	<lastname>Bals</lastname>
+	<children>
+		<person id="2">
+			<firstname>Timo</firstname>
+			<lastname>Bals</lastname>
+		</person>
+	</children>
+	<children>
+		<person id="3">
+			<firstname>Brigitte</firstname>
+			<lastname>Bals</lastname>
+		</person>
+	</children>
+</person>
