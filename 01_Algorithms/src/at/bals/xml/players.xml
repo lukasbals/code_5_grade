@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE player SYSTEM "players.dtd" >
+<player country="Österreich">
+	<vorname>lukas</vorname>
+	<nachname>bals</nachname>
+	<salery>10000000</salery>
+	<club>
+		<land></land>
+		<name>name</name>
+	</club>
+</player>

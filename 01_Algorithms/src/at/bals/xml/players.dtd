@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT player (vorname?, nachname, salery?, club+)>
+<!ELEMENT vorname (#PCDATA)>
+<!ELEMENT nachname (#PCDATA)>
+<!ELEMENT club (land, name)>
+<!ELEMENT land (#PCDATA)>
+<!ELEMENT name (#PCDATA)>
+<!ATTLIST player country CDATA #REQUIRED>
