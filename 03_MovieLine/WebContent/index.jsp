@@ -4,17 +4,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=US-ASCII">
-<title>Insert title here</title>
-</head>
-<body>
-	<%@ page language="java" contentType="text/html; charset=US-ASCII"
-		pageEncoding="US-ASCII"%>
-	<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-
-<html>
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=US-ASCII">
-<title>Insert title here</title>
+<title>Movie Line</title>
 <script src="./res/js/jquery-1.11.1.min.js"></script>
 <script src="./res/js/jquery-ui.min.js"></script>
 <link href="./res/css/bootstrap.min.css" rel="stylesheet">
@@ -102,7 +92,5 @@
 		<!-- 			</div> -->
 		<!-- 		</div> -->
 	</div>
-</body>
-</html>
 </body>
 </html>
