@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;01_Algorithms/src/at/bals/xml/cars.dtd&apos; to &apos;players.dtd&apos;" description="Rename resource &apos;cars.dtd&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/at/bals/xml/cars.dtd" name="players.dtd" stamp="1447339094463" updateReferences="true"/>
+</session>

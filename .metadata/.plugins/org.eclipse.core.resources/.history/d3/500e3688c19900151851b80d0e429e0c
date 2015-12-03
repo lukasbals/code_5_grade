@@ -1,0 +1,5 @@
+package at.bals.robot.vo;
+
+public class RobotDataStructure {
+
+}

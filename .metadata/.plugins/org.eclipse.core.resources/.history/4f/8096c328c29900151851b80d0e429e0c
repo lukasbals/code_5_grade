@@ -1,0 +1,32 @@
+package at.bals.robot.services;
+
+import java.awt.PageAttributes.MediaType;
+import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.List;
+
+import javax.xml.ws.Response;
+
+import at.bals.robot.dao.RobotDao;
+import at.bals.robot.vo.Movie;
+
+
+public class RobotService {
+	//Arraylist erstellen
+	private List<Movie> itemList = new ArrayList<Movie>();
+	
+	//POST
+	@POST
+	@Path("")
+	// @Produces({ MediaType.APPLICATION_JSON, MediaType.APPLICATION_XML })
+	@Consumes({ MediaType.APPLICATION_JSON, MediaType.APPLICATION_XML })
+	public Response addTask(Movie movie) {
+		try {
+			RobotDao dao = new RobotDao();
+			dao.insertData(movie);
+			return Response.status(201).build();
+		} catch (SQLException e) {
+			return Response.status(400).build();
+		}
+	}
+}

@@ -1,0 +1,5 @@
+INDEX VERSION 1.127
+/Users/lukibals/GitHub/code_5_grade/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/4096853088.index
+/02_MakeJson/src
+/Users/lukibals/GitHub/code_5_grade/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/3834850608.index
+/03_MovieLine/src

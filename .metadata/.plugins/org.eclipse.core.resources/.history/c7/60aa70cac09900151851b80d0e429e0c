@@ -1,0 +1,26 @@
+package at.bals.robot.services;
+
+import java.sql.DriverManager;
+import java.sql.SQLException;
+
+public class RobotService {
+
+	/**
+	 * Sets a connection to the database
+	 */
+	private void setConnection() {
+		try {
+			Class.forName("com.mysql.jdbc.Driver");
+			this.connection = DriverManager.getConnection("jdbc:mysql://"
+					+ ipAddress + "/" + databaseName + "?user=" + userName
+					+ "&password=" + password + "");
+		} catch (ClassNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+	}
+}

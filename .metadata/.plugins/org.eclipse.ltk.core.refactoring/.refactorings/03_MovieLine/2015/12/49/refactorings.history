@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;at.bals.robot.vo.RobotDataStructure&apos; to &apos;Movie&apos;&#x0A;- Original project: &apos;03_MovieLine&apos;&#x0A;- Original element: &apos;at.bals.robot.vo.RobotDataStructure&apos;&#x0A;- Renamed element: &apos;at.bals.robot.vo.Movie&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;RobotDataStructure&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;at.bals.robot.vo{RobotDataStructure.java[RobotDataStructure" matchStrategy="1" name="Movie" qualified="false" references="true" similarDeclarations="false" stamp="1449149279829" textual="false" version="1.0"/>
+</session>

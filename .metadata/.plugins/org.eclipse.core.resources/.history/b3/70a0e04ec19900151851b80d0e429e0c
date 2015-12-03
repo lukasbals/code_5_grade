@@ -1,0 +1,12 @@
+package at.bals.robot.services;
+
+import java.util.ArrayList;
+import java.util.List;
+
+
+public class RobotService {
+	//Arraylist erstellen
+	private List<Item> itemList = new ArrayList<Item>();
+	
+	
+}

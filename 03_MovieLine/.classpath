@@ -9,5 +9,6 @@
 	<classpathentry exported="true" kind="con" path="org.eclipse.jst.j2ee.internal.web.container"/>
 	<classpathentry exported="true" kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
 	<classpathentry exported="true" kind="lib" path="/Users/lukibals/GitHub/code_5_grade/javax.servlet-api-3.0.1.jar"/>
+	<classpathentry exported="true" kind="lib" path="/Users/lukibals/GitHub/code_5_grade/javax.ws.rs.jar"/>
 	<classpathentry kind="output" path="build/classes"/>
 </classpath>

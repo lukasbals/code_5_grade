@@ -1,0 +1,36 @@
+package at.bals.additionAlgorithm;
+
+public class Addition {
+	int num1 = 122;
+	int num2 = 234;
+
+	public static void main(String[] args) {
+		Addition a = new Addition();
+		a.App();
+	}
+
+	public App() {
+		boolean i = true;
+		int count = 0;
+		int memorize = 0;
+		while (i == true) {
+			if (this.extractDigit(num1, count) >= 1){
+				int result = this.extractDigit(num1, count) + this.extractDigit(num2, count);
+				if (result <= 10){
+					result = this.extractDigit(result, 0);
+					memorize = this.extractDigit(result, 1);
+				}
+				System.out.println(result);
+			} else {
+				return;
+			}
+			
+		}
+	}
+
+	private int extractDigit(int number, int position) {
+		number = (int) (number / (Math.pow(10, position)));
+		return number % 10;
+	}
+
+}
