@@ -1,0 +1,28 @@
+package at.bals.robot.vo;
+
+import javax.xml.bind.annotation.XmlRootElement;
+
+@XmlRootElement
+public class Movie {
+	private int id;
+	private String title;
+	private String image;
+	private String bewertung;
+	private String area;
+	private int year;
+	private String description;
+	private String regisseur;
+	private String genre;
+	private String 
+
+	public Movie() {
+
+	}
+
+	public Movie(int id, String name, int quantity) {
+		super();
+		this.id = id;
+		this.name = name;
+		this.quantity = quantity;
+	}
+}
