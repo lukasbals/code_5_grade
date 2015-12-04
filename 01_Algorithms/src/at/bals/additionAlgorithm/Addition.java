@@ -1,7 +1,7 @@
 package at.bals.additionAlgorithm;
 
 public class Addition {
-	int num1 = 990;
+	int num1 = 12990;
 	int num2 = 999;
 
 	public static void main(String[] args) {
