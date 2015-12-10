@@ -1,7 +1,7 @@
-package at.bals.additionAlgorithm;
+package at.bals.firstAlgorithms;
 
 public class CalcutateEaster {
-	int J = 2019;
+	int J = 2030;
 
 	public static void main(String[] args) {
 		CalcutateEaster ce = new CalcutateEaster();
@@ -21,7 +21,7 @@ public class CalcutateEaster {
 			System.out.println(P + ". April " + J);
 
 		} else {
-			System.out.println(P + 31 + ". März " + J);
+			System.out.println(P + 31 + ". M??rz " + J);
 		}
 	}
 }

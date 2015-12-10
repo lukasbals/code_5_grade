@@ -1,4 +1,4 @@
-package at.bals.additionAlgorithm;
+package at.bals.firstAlgorithms;
 
 public class Addition {
 	int num1 = 12990;
