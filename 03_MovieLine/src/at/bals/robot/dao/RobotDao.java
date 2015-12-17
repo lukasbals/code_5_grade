@@ -9,7 +9,7 @@ import at.bals.robot.vo.Movie;
 
 public class RobotDao {
 	private static final String ipAddress = "172.16.19.146";
-	private static final String databaseName = "marcofragen";
+	private static final String databaseName = "movieDB";
 	private static final String userName = "lukas";
 	private static final String password = "lukas";
 	private Connection connection;
@@ -25,8 +25,9 @@ public class RobotDao {
 			setConnection();
 		}
 		Statement stmt = this.connection.createStatement();
-		stmt.executeUpdate("insert into firstRest.shoppingList (name, quantity) VALUES ('"
-				+ "varialbe" + "', '" + "varialbe" + "');");
+		System.out.println(movie.getTitle() + " : "+ movie.getYear());
+		stmt.executeUpdate("insert into movieDB.movies (title, year) values ('"
+				+ movie.getTitle() + "', '" + movie.getYear() + "');");
 		stmt.close();
 		connection.close();
 	}

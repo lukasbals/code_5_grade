@@ -3,14 +3,14 @@
 	xmlns="http://java.sun.com/xml/ns/javaee"
 	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
 	version="3.0">
-	<display-name>09_REST_Tomcat</display-name>
+	<display-name>03_MovieLine</display-name>
 
 	<servlet>
 		<servlet-name>Jersey REST Service</servlet-name>
 		<servlet-class>com.sun.jersey.spi.container.servlet.ServletContainer</servlet-class>
 		<init-param>
 			<param-name>com.sun.jersey.config.property.packages</param-name>
-			<param-value>at.bals.taskservice.services</param-value>
+			<param-value>at.bals.robot.services</param-value>
 		</init-param>
 		<load-on-startup>1</load-on-startup>
 	</servlet>

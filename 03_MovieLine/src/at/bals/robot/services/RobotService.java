@@ -13,7 +13,7 @@ import javax.ws.rs.core.Response;
 import at.bals.robot.dao.RobotDao;
 import at.bals.robot.vo.Movie;
 
-
+@Path("robot/")
 public class RobotService {
 	//Arraylist erstellen
 	private List<Movie> movielist = new ArrayList<Movie>();

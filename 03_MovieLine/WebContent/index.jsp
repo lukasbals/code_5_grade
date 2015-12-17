@@ -50,13 +50,11 @@
 			}
 			
 			function insertData(data) {
-				movieTitle = data.Title;
-				
 				postData = makePostData(data);
-				
+				console.log(postData);
 				$.ajax({
 					type : 'POST',
-					url : '<%=request.getContextPath()%>/rest/' + movieTitle,
+					url : '<%=request.getContextPath()%>/rest/robot',
 				data : JSON.stringify(postData),
 				statusCode : {
 					200 : function(data) {
