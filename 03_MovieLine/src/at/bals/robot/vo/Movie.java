@@ -6,6 +6,7 @@ import javax.xml.bind.annotation.XmlRootElement;
 public class Movie {
 	private int id;
 	private int year;
+	private int runtime;
 	private String title;
 	private String country;
 	private String director;
@@ -20,10 +21,13 @@ public class Movie {
 
 	}
 
-	public Movie(int id, int year, String title, String country, String director, String actors, String poster, String rated, String plot, String genre, String language) {
+	public Movie(int id, int year, int runtime, String title, String country,
+			String director, String actors, String poster, String rated,
+			String plot, String genre, String language) {
 		super();
 		this.id = id;
 		this.year = year;
+		this.runtime = runtime;
 		this.title = title;
 		this.country = country;
 		this.director = director;
@@ -33,6 +37,14 @@ public class Movie {
 		this.plot = plot;
 		this.genre = genre;
 		this.language = language;
+	}
+
+	public int getRuntime() {
+		return runtime;
+	}
+
+	public void setRuntime(int runtime) {
+		this.runtime = runtime;
 	}
 
 	public int getId() {
@@ -122,5 +134,5 @@ public class Movie {
 	public void setLanguage(String language) {
 		this.language = language;
 	}
-	
+
 }

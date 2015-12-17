@@ -8,8 +8,8 @@ import java.sql.Statement;
 import at.bals.robot.vo.Movie;
 
 public class RobotDao {
-	private static final String ipAddress = "localhost";
-	private static final String databaseName = "firstRest";
+	private static final String ipAddress = "172.16.19.146";
+	private static final String databaseName = "marcofragen";
 	private static final String userName = "lukas";
 	private static final String password = "lukas";
 	private Connection connection;

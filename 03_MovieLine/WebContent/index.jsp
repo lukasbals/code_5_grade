@@ -1,5 +1,5 @@
-<%@ page language="java" contentType="text/html; charset=US-ASCII"
-	pageEncoding="US-ASCII"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -10,60 +10,71 @@
 <link href="./res/css/bootstrap.min.css" rel="stylesheet">
 <script>
 	$(function() {
-		$("#access-button").click(
-				function() {
+		
+		$("#access-button").click(function() {
 					alert("IN");
+					
 					var movieTitle = $("#movie-title").val();
+					
 					movieTitle = movieTitle.replace(/\s/g, "+");
-			$.ajax({
-						// 				dataType:'json',
-						// 				contentType : 'application/json',
-						type : 'GET',
-						url : 'http://omdbapi.com/?t=' + movieTitle,
-						statusCode : {
-							200 : function(data) {
-								//alert("works");
-								if (data.Error) {
-									alert("Film nicht gefunden");
-								}
-								console.log(data);
-								$("#output").html(
-										"<div>" + data.Title + " / "
-												+ data.Country + " / "
-												+ data.Genre + "</div>");
-								var postData = {};
-								postData.title = data.Title;
-// 								$.ajax({
-// 									type : 'POST',
-<%-- 									url : '<%=request.getContextPath()%>/rest/' --%>
-// 																	+ movieTitle,
-// 															data : JSON
-// 																	.stringify(postData),
-// 															statusCode : {
-// 																200 : function(
-// 																		data) {
-// 																	//alert("works");
-// 																	if (data.Error) {
-// 																		alert("Insert hat nicht funktioniert!");
-// 																	}
-// 																	console
-// 																			.log(data);
+					
+					getData(movieTitle);
+					
+		});
+			
+			function getData(movieTitle) {
+				$.ajax({
+					// 				dataType:'json',
+					// 				contentType : 'application/json',
+					type : 'GET',
+					url : 'http://omdbapi.com/?t=' + movieTitle,
+					statusCode : {
+						200 : function(data) {
+							//alert("works");
+							if (data.Error) {
+								alert("Film nicht gefunden");
+							}
+							
+							console.log(data);
+							
+							insertData(data);
+							
+							
+							$("#output").html(
+									"<div>" + data.Title + " / "
+											+ data.Country + " / "
+											+ data.Genre + "</div>");
+						}
+					}
+				});
+			}
+			
+			function insertData(data) {
+				movieTitle = data.Title;
+				
+				postData = makePostData(data);
+				
+				$.ajax({
+					type : 'POST',
+					url : '<%=request.getContextPath()%>/rest/' + movieTitle,
+				data : JSON.stringify(postData),
+				statusCode : {
+					200 : function(data) {
+						alert("posted");
+					}
+				}
+			});
+		}
 
-// 																}
-// 															}
-// 														});
-											}
-										},
-										beforeSend : function() {
-											//alert("before");
-											$("#loadIcon").toggle();
-										},
-										complete : function() {
-											// Handle the complete event
-											$("#loadIcon").fadeToggle();
-										}
-									});
-						});
+		function makePostData(data) {
+			var postData = {};
+
+			postData.title = data.Title;
+			postData.year = data.Year;
+
+			return postData;
+		}
+
 	});
 </script>
 </head>
