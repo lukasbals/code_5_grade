@@ -1,4 +1,4 @@
-package at.bals.dataGenerator;
+package at.bals.sortAlgorithms;
 
 public class BubbleSort implements Sort {
 	public int[] doSort(int[] bubbleSortData) {

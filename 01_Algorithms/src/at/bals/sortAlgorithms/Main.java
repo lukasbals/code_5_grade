@@ -1,4 +1,4 @@
-package at.bals.dataGenerator;
+package at.bals.sortAlgorithms;
 
 public class Main {
 
@@ -33,7 +33,7 @@ public class Main {
 		}
 
 		//
-		// GRÖSSTE ZAHL ERMITTELN
+		// GR??SSTE ZAHL ERMITTELN
 		//
 		int maxNumber = min;
 		for (int i = 0; i < data.length; i++) {
@@ -41,7 +41,7 @@ public class Main {
 				maxNumber = data[i];
 			}
 		}
-		System.out.println("Die größte Zahl ist: " + maxNumber);
+		System.out.println("Die gr????te Zahl ist: " + maxNumber);
 
 		//
 		// KLEINSTE ZAHL ERMITTELN
