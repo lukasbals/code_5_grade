@@ -1,9 +1,9 @@
 package at.bals.dataGenerator;
 
-public class SelectionSort {
-	public int[] selectionSort(int[] data, int max) {
-		for (int f = 0; f < data.length; f++) {
-			int aMin = max;
+public class SelectionSort implements Sort {
+	public int[] doSort(int[] data) {
+		for (int f = 0; f < data.length; f++) {			
+			int aMin = 100000;
 			int pos = 0;
 			for (int i = f; i < data.length; i++) {
 				if (data[i] < aMin) {

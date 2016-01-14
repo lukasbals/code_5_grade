@@ -1,7 +1,7 @@
 package at.bals.dataGenerator;
 
-public class InsertionSort {
-	public int[] insertionSort(int[] data) {
+public class InsertionSort implements Sort{
+	public int[] doSort(int[] data) {
 		int actualMin;
 		int actualMax;
 		if (data[0] > data[1]) {
@@ -18,13 +18,14 @@ public class InsertionSort {
 			for (int x = 0; x < i; x++) {
 				if (f < data[x]) {
 
-					for (int z = i; z > x; z = z - 1) {
+					for (int z = i; z > (x); z = z - 1) {
 						data[z] = data[z - 1];
 					}
 					data[x] = f;
+					x = i;
 				}
 			}
-			
+
 		}
 		return data;
 	}

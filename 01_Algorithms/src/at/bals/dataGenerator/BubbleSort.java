@@ -1,7 +1,7 @@
 package at.bals.dataGenerator;
 
-public class BubbleSort {
-	public int[] bubbleSort(int[] bubbleSortData) {
+public class BubbleSort implements Sort {
+	public int[] doSort(int[] bubbleSortData) {
 		int countNum = 0;
 		while (countNum < (bubbleSortData.length -1)) {
 			countNum = 0;

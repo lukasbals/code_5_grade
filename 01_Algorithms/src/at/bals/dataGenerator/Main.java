@@ -5,9 +5,6 @@ public class Main {
 	public static void main(String[] args) {
 
 		DataGenerator dg = new DataGenerator();
-		SelectionSort ss = new SelectionSort();
-		BubbleSort bs = new BubbleSort();
-		InsertionSort is = new InsertionSort();
 
 		int size = 5;
 		int min = 10;
@@ -58,13 +55,11 @@ public class Main {
 		System.out.println("Die kleinste Zahl ist: " + minNumber);
 
 		//
-		// Sysout Selection Sort
+		// Sysout Sorts
 		//
+		Sort sort = new InsertionSort();
+		int[] sortedData = sort.doSort(data);
 		
-
-//		int[] sortedData = ss.selectionSort(data, max);
-		int[] sortedData = bs.bubbleSort(data);
-//		int[] sortedData = is.insertionSort(data);
 		for (int i = 0; i < data.length; i++) {
 			System.out.println("SORTED: " + sortedData[i]);
 		}
