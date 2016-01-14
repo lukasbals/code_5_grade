@@ -25,7 +25,7 @@ public class RobotDao {
 			setConnection();
 		}
 		Statement stmt = this.connection.createStatement();
-		System.out.println(movie.getTitle() + " : "+ movie.getYear());
+		System.out.println(movie.getTitle() + " : " + movie.getYear());
 		stmt.executeUpdate("insert into movieDB.movies (title, year) values ('"
 				+ movie.getTitle() + "', '" + movie.getYear() + "');");
 		stmt.close();

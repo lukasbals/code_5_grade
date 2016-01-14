@@ -1,8 +1,6 @@
 package at.bals.robot.services;
 
 import java.sql.SQLException;
-import java.util.ArrayList;
-import java.util.List;
 
 import javax.ws.rs.Consumes;
 import javax.ws.rs.POST;
@@ -15,15 +13,15 @@ import at.bals.robot.vo.Movie;
 
 @Path("robot/")
 public class RobotService {
-	//Arraylist erstellen
-	private List<Movie> movielist = new ArrayList<Movie>();
-	
-	//POST
+	// Arraylist erstellen
+	// private List<Movie> movielist = new ArrayList<Movie>();
+
+	// POST
 	@POST
 	@Path("")
 	// @Produces({ MediaType.APPLICATION_JSON, MediaType.APPLICATION_XML })
 	@Consumes({ MediaType.APPLICATION_JSON, MediaType.APPLICATION_XML })
-	public Response addTask(Movie movie) {
+	public Response insertData(Movie movie) {
 		try {
 			RobotDao dao = new RobotDao();
 			dao.insertData(movie);
