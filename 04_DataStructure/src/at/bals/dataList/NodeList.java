@@ -8,8 +8,7 @@ public class NodeList {
 	}
 
 	public void outline() {
-		boolean i = true;
-
+		
 		Node actNode;
 		actNode = root;
 
