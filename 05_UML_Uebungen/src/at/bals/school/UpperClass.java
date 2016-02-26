@@ -11,8 +11,5 @@ public class UpperClass implements IClassType {
 		return finalWork;
 	}
 
-	public void setFinalWork(String finalWork) {
-		this.finalWork = finalWork;
-	}
 
 }
