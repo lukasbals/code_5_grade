@@ -7,7 +7,7 @@ public class School {
 	private String name;
 	private List<Class> classes = new ArrayList<Class>();
 
-	public void newSchool(String name) {
+	public School(String name) {
 		this.name = name;
 	}
 

@@ -11,27 +11,26 @@ public class Main {
 
 		s1.newStudent("Lukas", 2);
 		s2.newStudent("Tobias", 4);
-		s3.newStudent("Markus", 1);
-		s4.newStudent("Corina", 2);
+		s3.newStudent("Markus", 1.1);
+		s4.newStudent("Corina", 2.3);
+		
+		UpperClass uc = new UpperClass("UpperWork");
+		VocClass vc = new VocClass("VocWork");
 
-		Class c1 = new Class();
-		Class c2 = new Class();
-
-		c1.newClass("9bWI");
-		c2.newClass("2aFI");
+		Class c1 = new Class("9bWI", uc);
+		Class c2 = new Class("2aFI", vc);
 
 		c1.addStudentToClass(s1);
 		c1.addStudentToClass(s2);
 		c2.addStudentToClass(s3);
 		c2.addStudentToClass(s4);
 
-		School sch1 = new School();
-
-		sch1.newSchool("HTL-Dornbirn");
+		School sch1 = new School("HTL-Dornbirn");
 
 		sch1.addClassToSchool(c1);
 		sch1.addClassToSchool(c2);
 
 		System.out.println(sch1.getAverageGrade());
+		System.out.println(c2.getClassWork());
 	}
 }
